@@ -3,11 +3,11 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-const resolutions = require("./routes/resolutions");
+const products = require("./routes/products");
 
 app.use(bodyParser.json());
 
-app.use("/resolutions", resolutions);
+app.use("/products", products);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
