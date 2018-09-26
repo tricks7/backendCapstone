@@ -5,27 +5,24 @@ exports.seed = function(knex, Promise) {
       return knex("products").insert([
         {
           id: 1,
-          itemName: "Apples",
-          quantity: "5",
-          imgUrl: "https://pbs.twimg.com/profile_images/723257483276484609/oZOK5CpH_400x400.jpg",
+          title: "Apples",
           location: "Denver, CO",
-          claimed: "No"
+          price: 'Offering',
+          imgUrl: "https://pbs.twimg.com/profile_images/723257483276484609/oZOK5CpH_400x400.jpg",
         },
         {
           id: 2,
-          itemName: "Beets",
-          quantity: "3",
-          imgUrl: "https://images.freshop.com/00033383700700/d9bd4288eef063ae9a9d9b31b7f1cd79_medium.png",
+          title: "Beets",
           location: "Denver, CO",
-          claimed: "No"
+          price: 'Offering',
+          imgUrl: "https://images.freshop.com/00033383700700/d9bd4288eef063ae9a9d9b31b7f1cd79_medium.png",
         },
         {
           id: 3,
-          itemName: "Cauliflower",
-          quantity: "2",
-          imgUrl: "http://images.bigoven.com/image/upload/t_recipe-256/cauliflower.jpg",
+          title: "Apples",
           location: "Denver, CO",
-          claimed: "Yes"
+          price: 'Offering',
+          imgUrl: "http://images.bigoven.com/image/upload/t_recipe-256/cauliflower.jpg",
         }
       ]);
     })
